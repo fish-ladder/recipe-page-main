@@ -1,0 +1,40 @@
+
+/* CUSTOM PROPERTIES */
+
+:root {
+    /* COLORS */
+    
+
+    /* FONTS */
+
+    /* FONT SIZING */
+    --fs-14: 0.875rem;
+    --fs-24: 1.5rem;
+}
+
+/* RESETS */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+* {
+    margin: 0;
+}
+
+/* STYLING */
+
+body {
+    /* FONTS, COLORS AND SIZING*/
+    background-color: var(--color-off-black);
+    width: 100vw;
+    height: 100vh;
+
+    /* LAYOUT AND POSITIONING */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
