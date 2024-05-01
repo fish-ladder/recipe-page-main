@@ -2,14 +2,35 @@
 /* CUSTOM PROPERTIES */
 
 :root {
-    /* COLORS */
-    
+  /* PRIMARY COLORS */
+  --brandy-red: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
 
-    /* FONTS */
+  /* NEUTRAL COLORS */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
 
-    /* FONT SIZING */
-    --fs-14: 0.875rem;
-    --fs-24: 1.5rem;
+  /* FONTS */
+  --serif: Young Serif, serif;
+  --sans: Outfit, sans-serif;
+
+  /* FONT SIZING */
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
+  --fs-36: 2.25rem;
+
+  /* SET PRIMARY FONT */
+  font-family: var(--sans);
+  color: var(--wenge-brown);
+  line-height: 1.5rem;
 }
 
 /* RESETS */
@@ -25,16 +46,152 @@ html {
     margin: 0;
 }
 
-/* STYLING */
+/* MAIN STYLING */
 
 body {
     /* FONTS, COLORS AND SIZING*/
-    background-color: var(--color-off-black);
+    /* background-color: var(--color-off-black); */
     width: 100vw;
-    height: 100vh;
 
     /* LAYOUT AND POSITIONING */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    overflow-x: hidden;
 }
+
+main {
+  /* LAYOUT AND POSITIONING */
+  padding: 0 32px;
+}
+
+.omelette-pic {
+  max-width: 100%;
+  height: auto;
+}
+
+#header-text {
+  padding: 0 32px;
+}
+
+h1 {
+  /* FONTS, COLORS AND SIZING*/
+  font-family: var(--serif);
+  font-size: var(--fs-36);
+  font-weight: 400;
+  color: var(--dark-charcoal);
+
+  /* LAYOUT AND POSITIONING */
+  line-height: 2.25rem;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+#preparation-time {
+  /* FONTS, COLORS AND SIZING*/
+  background-color: var(--rose-white);
+
+  /* LAYOUT AND POSITIONING */
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin: 32px 0;
+  border-radius: 12px;
+}
+
+#preparation-time li:nth-child(n+1):nth-child(-n+2) {
+  padding-bottom: 6px;
+}
+
+h2 {
+  /* FONTS, COLORS AND SIZING*/
+  font-size: var(--fs-20);
+  font-weight: 600;
+  color: var(--dark-raspberry);
+
+  margin-bottom: 16px;
+}
+
+.med-bold {
+  /* FONTS, COLORS AND SIZING*/
+  font-weight: 700;
+  font-size: var(--fs-16);
+}
+
+
+li::marker {
+  /* FONTS, COLORS AND SIZING*/
+  color: var(--dark-raspberry);
+}
+
+h3 {
+  /* FONTS, COLORS AND SIZING*/
+  font-family: var(--serif);
+  font-size: var(--fs-28);
+  font-weight: 400;
+  color: var(--dark-raspberry);
+
+  /* LAYOUT AND POSITIONING */
+  margin-bottom: 24px;
+}
+
+#ingredients li:nth-child(n+1):nth-child(-n+4) {
+  padding-bottom: 6px;
+}
+
+.divider {
+  border-bottom: 1px solid var(--light-grey);
+  margin: 32px 0;
+}
+
+ul li::marker {
+  font-size: 10pt;
+}
+
+ol li::marker {
+  /* FONTS, COLORS AND SIZING*/
+  font-weight: 700;
+}
+
+ol, ul {
+  /* LAYOUT AND POSITIONING */
+  padding-inline-start: 22px;
+}
+
+ol li, ul li {
+  /* LAYOUT AND POSITIONING */
+  padding-inline-start: 20px;
+}
+
+#cooking-instructions li:nth-child(n+1):nth-child(-n+5) {
+  padding-bottom: 6px;
+}
+
+table {
+  /* LAYOUT AND POSITIONING */
+  border-collapse: collapse;
+  margin: 12px 0 28px 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+table td { 
+  border-bottom: 1px solid var(--light-grey);
+  padding: 12px 0;
+}
+
+
+td:first-child {
+  padding-left: 30px;
+}
+
+td:last-child {
+  /* FONTS, COLORS AND SIZING*/
+  color: var(--dark-raspberry);
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+.last-row {
+  border-style: none;
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
