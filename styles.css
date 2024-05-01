@@ -50,21 +50,30 @@ html {
 
 body {
     /* FONTS, COLORS AND SIZING*/
-    /* background-color: var(--color-off-black); */
+    background-color: var(--eggshell);
     width: 100vw;
 
     /* LAYOUT AND POSITIONING */
     overflow-x: hidden;
 }
 
+#card {
+  background-color: var(--white);
+  max-width: 736px;
+  height: 100%;
+  margin: auto;
+}
+
 main {
   /* LAYOUT AND POSITIONING */
-  padding: 0 32px;
+  padding: 0 32px 1px 32px;
 }
 
 .omelette-pic {
+  display: block;;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 #header-text {
@@ -191,6 +200,27 @@ td:last-child {
 
 .last-row {
   border-style: none;
+}
+
+@media screen and (min-width: 656px) {
+  #card {
+    padding: 40px 0 1px 0;
+    margin: 5% auto;
+    border-radius: 24px;
+  }
+
+  main {
+    /* LAYOUT AND POSITIONING */
+    padding: 0 40px;
+  }
+
+  #header-text {
+    padding: 0 40px;
+  }
+
+  .omelette-pic {
+    border-radius: 12px;
+  }
 }
 
 /* .attribution { font-size: 11px; text-align: center; }
