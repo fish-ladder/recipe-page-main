@@ -58,7 +58,10 @@ body {
 }
 
 #card {
+  /* FONTS, COLORS AND SIZING*/
   background-color: var(--white);
+
+  /* LAYOUT AND POSITIONING */
   max-width: 736px;
   height: 100%;
   margin: auto;
@@ -70,6 +73,7 @@ main {
 }
 
 .omelette-pic {
+  /* LAYOUT AND POSITIONING */
   display: block;;
   max-width: 100%;
   height: auto;
@@ -77,6 +81,7 @@ main {
 }
 
 #header-text {
+  /* LAYOUT AND POSITIONING */
   padding: 0 32px;
 }
 
@@ -106,6 +111,7 @@ h1 {
 }
 
 #preparation-time li:nth-child(n+1):nth-child(-n+2) {
+  /* LAYOUT AND POSITIONING */
   padding-bottom: 6px;
 }
 
@@ -115,6 +121,7 @@ h2 {
   font-weight: 600;
   color: var(--dark-raspberry);
 
+  /* LAYOUT AND POSITIONING */
   margin-bottom: 16px;
 }
 
@@ -142,15 +149,18 @@ h3 {
 }
 
 #ingredients li:nth-child(n+1):nth-child(-n+4) {
+  /* LAYOUT AND POSITIONING */
   padding-bottom: 6px;
 }
 
 .divider {
+  /* LAYOUT AND POSITIONING */
   border-bottom: 1px solid var(--light-grey);
   margin: 32px 0;
 }
 
 ul li::marker {
+  /* FONTS, COLORS AND SIZING*/
   font-size: 10pt;
 }
 
@@ -170,24 +180,30 @@ ol li, ul li {
 }
 
 #cooking-instructions li:nth-child(n+1):nth-child(-n+5) {
+  /* LAYOUT AND POSITIONING */
   padding-bottom: 6px;
 }
 
 table {
-  /* LAYOUT AND POSITIONING */
+  /* FONTS, COLORS AND SIZING*/
   border-collapse: collapse;
+  /* LAYOUT AND POSITIONING */
   margin: 12px 0 28px 0;
   table-layout: fixed;
   width: 100%;
 }
 
 table td { 
+  /* FONTS, COLORS AND SIZING*/
   border-bottom: 1px solid var(--light-grey);
+
+  /* LAYOUT AND POSITIONING */
   padding: 12px 0;
 }
 
 
 td:first-child {
+  /* LAYOUT AND POSITIONING */
   padding-left: 30px;
 }
 
@@ -195,18 +211,24 @@ td:last-child {
   /* FONTS, COLORS AND SIZING*/
   color: var(--dark-raspberry);
   font-weight: 700;
+
+  /* LAYOUT AND POSITIONING */
   padding-left: 5px;
 }
 
 .last-row {
+  /* FONTS, COLORS AND SIZING*/
   border-style: none;
 }
 
 @media screen and (min-width: 656px) {
   #card {
+    /* FONTS, COLORS AND SIZING*/
+    border-radius: 24px;
+
+    /* LAYOUT AND POSITIONING */
     padding: 40px 0 1px 0;
     margin: 5% auto;
-    border-radius: 24px;
   }
 
   main {
@@ -215,10 +237,12 @@ td:last-child {
   }
 
   #header-text {
+    /* LAYOUT AND POSITIONING */
     padding: 0 40px;
   }
 
   .omelette-pic {
+    /* FONTS, COLORS AND SIZING*/
     border-radius: 12px;
   }
 }
