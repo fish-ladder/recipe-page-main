@@ -22,7 +22,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](github.com/fish-ladder/recipe-page-main/recipe-page-desktop-screenshot.png)
+![Recipe Screenshot](https://github.com/fish-ladder/recipe-page-main/blob/main/recipe-page-desktop-screenshot.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
